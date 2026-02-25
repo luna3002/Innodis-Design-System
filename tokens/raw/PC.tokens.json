@@ -1,0 +1,750 @@
+{
+  "전체넓이": {
+    "$type": "number",
+    "$value": 1920,
+    "$extensions": {
+      "com.figma.variableId": "VariableID:29:738",
+      "com.figma.scopes": [
+        "WIDTH_HEIGHT"
+      ],
+      "com.figma.isOverride": true
+    }
+  },
+  "그리드": {
+    "메인좌우여백": {
+      "$type": "number",
+      "$value": 260,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:504:2",
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.isOverride": true
+      }
+    },
+    "서브좌우여백": {
+      "$type": "number",
+      "$value": 260,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:504:3",
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.isOverride": true
+      }
+    }
+  },
+  "글자": {
+    "글씨체": {
+      "타이틀 font_family_title": {
+        "$type": "string",
+        "$value": "Gmarket Sans TTF",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:3577:4416",
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.type": "string",
+          "com.figma.isOverride": true
+        }
+      },
+      "본문 font_family_body": {
+        "$type": "string",
+        "$value": "Pretendard Variable",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:3577:4417",
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.type": "string",
+          "com.figma.isOverride": true
+        }
+      }
+    },
+    "자간": {
+      "font_spacing_title": {
+        "$type": "number",
+        "$value": -1,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:3577:5914",
+          "com.figma.scopes": [
+            "LETTER_SPACING"
+          ],
+          "com.figma.isOverride": true
+        }
+      },
+      "font_spacing_body": {
+        "$type": "number",
+        "$value": -1,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:3577:5915",
+          "com.figma.scopes": [
+            "LETTER_SPACING"
+          ],
+          "com.figma.isOverride": true
+        }
+      }
+    },
+    "크기": {
+      "font_display_xl": {
+        "$type": "number",
+        "$value": 60,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:278:1559",
+          "com.figma.scopes": [
+            "TEXT_CONTENT",
+            "FONT_SIZE"
+          ],
+          "com.figma.isOverride": true
+        }
+      },
+      "font_display_m": {
+        "$type": "number",
+        "$value": 52,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:371:572",
+          "com.figma.scopes": [
+            "TEXT_CONTENT",
+            "FONT_SIZE"
+          ],
+          "com.figma.isOverride": true
+        }
+      },
+      "font_heading_xl": {
+        "$type": "number",
+        "$value": 40,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:371:573",
+          "com.figma.scopes": [
+            "TEXT_CONTENT",
+            "FONT_SIZE"
+          ],
+          "com.figma.isOverride": true
+        }
+      },
+      "페이지단위타이틀   font_heading_m": {
+        "$type": "number",
+        "$value": 36,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:372:302",
+          "com.figma.scopes": [
+            "TEXT_CONTENT",
+            "FONT_SIZE"
+          ],
+          "com.figma.isOverride": true
+        }
+      },
+      "font_title_xl": {
+        "$type": "number",
+        "$value": 32,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:371:574",
+          "com.figma.scopes": [
+            "TEXT_CONTENT",
+            "FONT_SIZE"
+          ],
+          "com.figma.isOverride": true
+        }
+      },
+      "font_title_l": {
+        "$type": "number",
+        "$value": 28,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:371:575",
+          "com.figma.scopes": [
+            "TEXT_CONTENT",
+            "FONT_SIZE"
+          ],
+          "com.figma.isOverride": true
+        }
+      },
+      "font_title_m": {
+        "$type": "number",
+        "$value": 26,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:371:576",
+          "com.figma.scopes": [
+            "TEXT_CONTENT",
+            "FONT_SIZE"
+          ],
+          "com.figma.isOverride": true
+        }
+      },
+      "font_title_s": {
+        "$type": "number",
+        "$value": 24,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:371:577",
+          "com.figma.scopes": [
+            "TEXT_CONTENT",
+            "FONT_SIZE"
+          ],
+          "com.figma.isOverride": true
+        }
+      },
+      "font_title_xs": {
+        "$type": "number",
+        "$value": 22,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:371:578",
+          "com.figma.scopes": [
+            "TEXT_CONTENT",
+            "FONT_SIZE"
+          ],
+          "com.figma.isOverride": true
+        }
+      },
+      "font_body_xl": {
+        "$type": "number",
+        "$value": 20,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:371:579",
+          "com.figma.scopes": [
+            "TEXT_CONTENT",
+            "FONT_SIZE"
+          ],
+          "com.figma.isOverride": true
+        }
+      },
+      "font_body_l": {
+        "$type": "number",
+        "$value": 18,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:278:1558",
+          "com.figma.scopes": [
+            "TEXT_CONTENT",
+            "FONT_SIZE"
+          ],
+          "com.figma.isOverride": true
+        }
+      },
+      "font_body_m": {
+        "$type": "number",
+        "$value": 16,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:278:1557",
+          "com.figma.scopes": [
+            "TEXT_CONTENT",
+            "FONT_SIZE"
+          ],
+          "com.figma.isOverride": true
+        }
+      },
+      "font_body_s": {
+        "$type": "number",
+        "$value": 15,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:278:1560",
+          "com.figma.scopes": [
+            "TEXT_CONTENT",
+            "FONT_SIZE"
+          ],
+          "com.figma.isOverride": true
+        }
+      },
+      "font_body_xs": {
+        "$type": "number",
+        "$value": 14,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:278:1595",
+          "com.figma.scopes": [
+            "TEXT_CONTENT",
+            "FONT_SIZE"
+          ],
+          "com.figma.isOverride": true
+        }
+      }
+    }
+  },
+  "여백": {
+    "80 to 40": {
+      "$type": "number",
+      "$value": 80,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:440:1312",
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.isOverride": true
+      }
+    },
+    "60 to 32": {
+      "$type": "number",
+      "$value": 60,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:440:1313",
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.isOverride": true
+      }
+    },
+    "40 to 20": {
+      "$type": "number",
+      "$value": 40,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:440:1314",
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.isOverride": true
+      }
+    },
+    "32 to 18": {
+      "$type": "number",
+      "$value": 32,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:440:1315",
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.isOverride": true
+      }
+    },
+    "28 to 16": {
+      "$type": "number",
+      "$value": 28,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:501:1345",
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.isOverride": true
+      }
+    },
+    "24 to 14": {
+      "$type": "number",
+      "$value": 24,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:440:1322",
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.isOverride": true
+      }
+    },
+    "20 to 12": {
+      "$type": "number",
+      "$value": 20,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:440:1316",
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.isOverride": true
+      }
+    },
+    "16 to 10": {
+      "$type": "number",
+      "$value": 16,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:3566:1425",
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.isOverride": true
+      }
+    },
+    "12 to 8": {
+      "$type": "number",
+      "$value": 12,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:440:1317",
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.isOverride": true
+      }
+    },
+    "8 to 4": {
+      "$type": "number",
+      "$value": 8,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:440:1318",
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.isOverride": true
+      }
+    },
+    "6 to 3": {
+      "$type": "number",
+      "$value": 6,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:440:1319",
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.isOverride": true
+      }
+    },
+    "4 to 3": {
+      "$type": "number",
+      "$value": 4,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:3792:2070",
+        "com.figma.scopes": [
+          "GAP"
+        ],
+        "com.figma.isOverride": true
+      }
+    }
+  },
+  "라운드": {
+    "boder_radius_xs": {
+      "$type": "number",
+      "$value": 4,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:377:163",
+        "com.figma.scopes": [
+          "CORNER_RADIUS"
+        ],
+        "com.figma.isOverride": true
+      }
+    },
+    "boder_radius_m": {
+      "$type": "number",
+      "$value": 20,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:3564:1424",
+        "com.figma.scopes": [
+          "CORNER_RADIUS"
+        ],
+        "com.figma.isOverride": true
+      }
+    },
+    "border_radius_btn": {
+      "$type": "number",
+      "$value": 4,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:3615:1866",
+        "com.figma.scopes": [
+          "CORNER_RADIUS"
+        ],
+        "com.figma.isOverride": true
+      }
+    }
+  },
+  "아이콘": {
+    "24 to 18": {
+      "$type": "number",
+      "$value": 24,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:21:4308",
+        "com.figma.scopes": [
+          "WIDTH_HEIGHT"
+        ],
+        "com.figma.isOverride": true
+      }
+    },
+    "20 to 16": {
+      "$type": "number",
+      "$value": 20,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:440:1311",
+        "com.figma.scopes": [
+          "WIDTH_HEIGHT"
+        ],
+        "com.figma.isOverride": true
+      }
+    },
+    "18 to 14": {
+      "$type": "number",
+      "$value": 18,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:440:1310",
+        "com.figma.scopes": [
+          "WIDTH_HEIGHT"
+        ],
+        "com.figma.isOverride": true
+      }
+    },
+    "두께": {
+      "$type": "number",
+      "$value": 1.5,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:516:1351",
+        "com.figma.scopes": [
+          "STROKE_FLOAT"
+        ],
+        "com.figma.isOverride": true
+      }
+    },
+    "캐러셀도트": {
+      "$type": "number",
+      "$value": 8,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:570:200",
+        "com.figma.scopes": [
+          "WIDTH_HEIGHT"
+        ],
+        "com.figma.isOverride": true
+      }
+    }
+  },
+  "페이지네이션": {
+    "숫자넓이높이": {
+      "$type": "number",
+      "$value": 40,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:29:244",
+        "com.figma.scopes": [
+          "WIDTH_HEIGHT"
+        ],
+        "com.figma.isOverride": true
+      }
+    },
+    "아이콘높이": {
+      "$type": "number",
+      "$value": 40,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:29:174",
+        "com.figma.scopes": [
+          "WIDTH_HEIGHT"
+        ],
+        "com.figma.isOverride": true
+      }
+    },
+    "아이콘넓이": {
+      "$type": "number",
+      "$value": 60,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:29:173",
+        "com.figma.scopes": [
+          "WIDTH_HEIGHT"
+        ],
+        "com.figma.isOverride": true
+      }
+    }
+  },
+  "달력": {
+    "달력 블록가로세로": {
+      "$type": "number",
+      "$value": 40,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:635:1238",
+        "com.figma.scopes": [
+          "WIDTH_HEIGHT"
+        ],
+        "com.figma.isOverride": true
+      }
+    }
+  },
+  "버튼": {
+    "폰트": {
+      "btn_font_xl": {
+        "$type": "number",
+        "$value": 20,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:3615:1873",
+          "com.figma.scopes": [
+            "TEXT_CONTENT",
+            "FONT_SIZE"
+          ],
+          "com.figma.isOverride": true
+        }
+      },
+      "btn_font_l": {
+        "$type": "number",
+        "$value": 18,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:3615:1874",
+          "com.figma.scopes": [
+            "TEXT_CONTENT",
+            "FONT_SIZE"
+          ],
+          "com.figma.isOverride": true
+        }
+      },
+      "btn_font_m": {
+        "$type": "number",
+        "$value": 16,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:3615:1875",
+          "com.figma.scopes": [
+            "TEXT_CONTENT",
+            "FONT_SIZE"
+          ],
+          "com.figma.isOverride": true
+        }
+      },
+      "btn_font_s": {
+        "$type": "number",
+        "$value": 14,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:3615:1876",
+          "com.figma.scopes": [
+            "TEXT_CONTENT",
+            "FONT_SIZE"
+          ],
+          "com.figma.isOverride": true
+        }
+      }
+    },
+    "가로여백": {
+      "btn_padding_w_xl": {
+        "$type": "number",
+        "$value": 20,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:3612:1843",
+          "com.figma.scopes": [
+            "GAP"
+          ],
+          "com.figma.isOverride": true
+        }
+      },
+      "btn_padding_w_l": {
+        "$type": "number",
+        "$value": 18,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:3612:1844",
+          "com.figma.scopes": [
+            "GAP"
+          ],
+          "com.figma.isOverride": true
+        }
+      },
+      "btn_padding_w_m": {
+        "$type": "number",
+        "$value": 13,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:3612:1845",
+          "com.figma.scopes": [
+            "GAP"
+          ],
+          "com.figma.isOverride": true
+        }
+      },
+      "btn_padding_w_s": {
+        "$type": "number",
+        "$value": 12,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:3612:1846",
+          "com.figma.scopes": [
+            "GAP"
+          ],
+          "com.figma.isOverride": true
+        }
+      }
+    },
+    "세로여백": {
+      "btn_padding_h_xl": {
+        "$type": "number",
+        "$value": 16,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:3612:1836",
+          "com.figma.scopes": [
+            "GAP"
+          ],
+          "com.figma.isOverride": true
+        }
+      },
+      "btn_padding_h_l": {
+        "$type": "number",
+        "$value": 12,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:3612:1840",
+          "com.figma.scopes": [
+            "GAP"
+          ],
+          "com.figma.isOverride": true
+        }
+      },
+      "btn_padding_h_m": {
+        "$type": "number",
+        "$value": 12,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:3612:1841",
+          "com.figma.scopes": [
+            "GAP"
+          ],
+          "com.figma.isOverride": true
+        }
+      },
+      "btn_padding_h_s": {
+        "$type": "number",
+        "$value": 8,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:3612:1842",
+          "com.figma.scopes": [
+            "GAP"
+          ],
+          "com.figma.isOverride": true
+        }
+      }
+    },
+    "아이콘": {
+      "버튼아이콘xl": {
+        "$type": "number",
+        "$value": 18,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:3615:1867",
+          "com.figma.scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "com.figma.isOverride": true
+        }
+      },
+      "버튼아이콘l": {
+        "$type": "number",
+        "$value": 16,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:3615:1868",
+          "com.figma.scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "com.figma.isOverride": true
+        }
+      },
+      "버튼아이콘m": {
+        "$type": "number",
+        "$value": 14,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:3615:1869",
+          "com.figma.scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "com.figma.isOverride": true
+        }
+      },
+      "버튼아이콘s": {
+        "$type": "number",
+        "$value": 12,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:3615:1870",
+          "com.figma.scopes": [
+            "WIDTH_HEIGHT"
+          ],
+          "com.figma.isOverride": true
+        }
+      }
+    },
+    "사이여백": {
+      "사이여백xl-l": {
+        "$type": "number",
+        "$value": 8,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:3615:1871",
+          "com.figma.scopes": [
+            "GAP"
+          ],
+          "com.figma.isOverride": true
+        }
+      },
+      "사이여백m-s": {
+        "$type": "number",
+        "$value": 6,
+        "$extensions": {
+          "com.figma.variableId": "VariableID:3615:1872",
+          "com.figma.scopes": [
+            "GAP"
+          ],
+          "com.figma.isOverride": true
+        }
+      }
+    }
+  },
+  "$extensions": {
+    "com.figma.modeName": "PC"
+  }
+}

@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Component - Tab</title>
+    <link rel="stylesheet" href="../tokens/foundation-fonts.css" />
+    <link rel="stylesheet" href="../tokens/foundation-variables.css" />
+    <link rel="stylesheet" href="../css/components/tab.css" />
+    <link rel="stylesheet" href="../css/foundation/tab-preview.css" />
+  </head>
+  <body>
+    <div class="page-top-accent"></div>
+
+    <main class="page">
+      <h1 class="page-title">탭</h1>
+
+      <section class="platform-grid">
+        <article>
+          <h2 class="platform-title">Mobile</h2>
+          <div class="mobile-panel">
+            <div class="mobile-demo">
+              <div class="tab tab--box">
+                <div class="tab__list">
+                  <button class="tab__item is-selected" type="button">Item</button>
+                  <button class="tab__item" type="button">Item</button>
+                  <button class="tab__item" type="button">Item</button>
+                </div>
+              </div>
+
+              <div class="tab-mobile tab-mobile--box">
+                <button class="tab-mobile__trigger" type="button">
+                  <span>Item</span>
+                  <span class="tab-mobile__chevron" aria-hidden="true"></span>
+                </button>
+                <ul class="tab-mobile__options">
+                  <li class="is-selected">Item</li>
+                  <li>Item</li>
+                  <li>Item</li>
+                  <li>Item</li>
+                </ul>
+              </div>
+
+              <div class="tab tab--underline">
+                <div class="tab__list">
+                  <button class="tab__item is-selected" type="button">Item</button>
+                  <button class="tab__item" type="button">Item</button>
+                  <button class="tab__item" type="button">Item</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article>
+          <h2 class="platform-title">Desktop</h2>
+          <div class="desktop-panel">
+            <div class="state-showcase">
+              <section class="state-box">
+                <p class="state-box__title">Underline</p>
+                <div class="state-row tab tab--underline">
+                  <button class="tab__item is-selected" type="button">Item</button>
+                </div>
+                <div class="state-row tab tab--underline">
+                  <button class="tab__item" type="button">Item</button>
+                </div>
+                <div class="state-row tab tab--underline">
+                  <button class="tab__item is-hover" type="button">Item</button>
+                </div>
+                <div class="state-row tab-mobile">
+                  <button class="tab-mobile__trigger" type="button">
+                    <span>Item</span>
+                    <span class="tab-mobile__chevron" aria-hidden="true"></span>
+                  </button>
+                </div>
+                <div class="state-row tab-mobile">
+                  <ul class="tab-mobile__options">
+                    <li class="is-selected">Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                  </ul>
+                </div>
+              </section>
+
+              <section class="state-box">
+                <p class="state-box__title">box</p>
+                <div class="state-row tab tab--box">
+                  <button class="tab__item is-selected" type="button">Item</button>
+                </div>
+                <div class="state-row tab tab--box">
+                  <button class="tab__item" type="button">Item</button>
+                </div>
+                <div class="state-row tab tab--box">
+                  <button class="tab__item is-hover" type="button">Item</button>
+                </div>
+                <div class="state-row tab-mobile tab-mobile--box">
+                  <button class="tab-mobile__trigger" type="button">
+                    <span>Item</span>
+                    <span class="tab-mobile__chevron" aria-hidden="true"></span>
+                  </button>
+                </div>
+                <div class="state-row tab-mobile tab-mobile--box">
+                  <ul class="tab-mobile__options">
+                    <li class="is-selected">Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                  </ul>
+                </div>
+              </section>
+            </div>
+
+            <div class="bottom-examples">
+              <div class="tab tab--box">
+                <div class="tab__list">
+                  <button class="tab__item is-selected" type="button">Item</button>
+                  <button class="tab__item" type="button">Item</button>
+                  <button class="tab__item" type="button">Item</button>
+                </div>
+              </div>
+
+              <div class="responsive-switch">
+                <div class="switch-desktop tab tab--box">
+                  <div class="tab__list">
+                    <button class="tab__item is-selected" type="button">Item</button>
+                    <button class="tab__item" type="button">Item</button>
+                    <button class="tab__item" type="button">Item</button>
+                  </div>
+                </div>
+
+                <div class="switch-mobile tab-mobile tab-mobile--box">
+                  <button class="tab-mobile__trigger" type="button" aria-expanded="false">
+                    <span>Item</span>
+                    <span class="tab-mobile__chevron" aria-hidden="true"></span>
+                  </button>
+                  <ul class="tab-mobile__options">
+                    <li class="is-selected">Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="tab tab--underline">
+                <div class="tab__list">
+                  <button class="tab__item is-selected" type="button">Item</button>
+                  <button class="tab__item" type="button">Item</button>
+                  <button class="tab__item" type="button">Item</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <script>
+      document.addEventListener("click", (event) => {
+        const target = event.target;
+        if (!(target instanceof HTMLElement)) {
+          return;
+        }
+
+        const trigger = target.closest(".tab-mobile__trigger");
+        if (trigger) {
+          const mobileTab = trigger.closest(".tab-mobile");
+          if (mobileTab) {
+            const isOpen = mobileTab.classList.contains("is-open");
+            document.querySelectorAll(".mobile-demo .tab-mobile, .bottom-examples .tab-mobile").forEach((menu) => {
+              menu.classList.remove("is-open");
+              const menuTrigger = menu.querySelector(".tab-mobile__trigger");
+              if (menuTrigger) {
+                menuTrigger.setAttribute("aria-expanded", "false");
+              }
+            });
+
+            if (!isOpen) {
+              mobileTab.classList.add("is-open");
+              trigger.setAttribute("aria-expanded", "true");
+            }
+          }
+          return;
+        }
+
+        const optionItem = target.closest(".tab-mobile__options li");
+        if (optionItem) {
+          const options = optionItem.parentElement;
+          const mobileTab = optionItem.closest(".tab-mobile");
+          if (options && mobileTab) {
+            options.querySelectorAll("li").forEach((item) => item.classList.remove("is-selected"));
+            optionItem.classList.add("is-selected");
+
+            const label = mobileTab.querySelector(".tab-mobile__trigger span");
+            if (label) {
+              label.textContent = optionItem.textContent?.trim() || "Item";
+            }
+
+            mobileTab.classList.remove("is-open");
+            const menuTrigger = mobileTab.querySelector(".tab-mobile__trigger");
+            if (menuTrigger) {
+              menuTrigger.setAttribute("aria-expanded", "false");
+            }
+          }
+          return;
+        }
+
+        const button = target.closest(".tab__item");
+        if (button) {
+          if (button.closest(".state-showcase")) {
+            return;
+          }
+
+          const list = button.closest(".tab__list");
+          if (!list) {
+            return;
+          }
+
+          const items = list.querySelectorAll(".tab__item");
+          items.forEach((item) => {
+            item.classList.remove("is-selected", "is-hover");
+            item.setAttribute("aria-selected", "false");
+          });
+
+          button.classList.add("is-selected");
+          button.setAttribute("aria-selected", "true");
+          return;
+        }
+
+        document.querySelectorAll(".mobile-demo .tab-mobile, .bottom-examples .tab-mobile").forEach((menu) => {
+          menu.classList.remove("is-open");
+          const menuTrigger = menu.querySelector(".tab-mobile__trigger");
+          if (menuTrigger) {
+            menuTrigger.setAttribute("aria-expanded", "false");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

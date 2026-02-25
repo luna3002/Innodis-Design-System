@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  background: var(--color-gray-100);
+  color: var(--semantic-color-text-default);
+  font-family: var(--font-family-body);
+}
+
+#main-root {
+  min-height: calc(100vh - 136px);
+}

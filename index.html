@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Innodis Design System</title>
+    <link rel="stylesheet" href="./tokens/foundation-fonts.css" />
+    <link rel="stylesheet" href="./tokens/foundation-variables.css" />
+    <link rel="stylesheet" href="./css/components/header.css" />
+    <link rel="stylesheet" href="./css/components/footer.css" />
+    <link rel="stylesheet" href="./css/foundation/layout-shell.css" />
+    <link id="main-page-style" rel="stylesheet" href="./css/foundation/colors.css" />
+  </head>
+  <body>
+    <div id="header-root"></div>
+    <div id="main-root"></div>
+
+    <div id="footer-root"></div>
+
+    <script>
+      async function loadIntoRoot(rootId, filePath) {
+        const root = document.getElementById(rootId);
+        if (!root) return;
+
+        const response = await fetch(filePath);
+        if (!response.ok) {
+          throw new Error(`로드 실패: ${filePath}`);
+        }
+
+        const html = await response.text();
+        root.innerHTML = html;
+      }
+
+      async function loadMainFromPage(rootId, filePath) {
+        const root = document.getElementById(rootId);
+        if (!root) return;
+
+        const response = await fetch(filePath);
+        if (!response.ok) {
+          throw new Error(`로드 실패: ${filePath}`);
+        }
+
+        const html = await response.text();
+        const doc = new DOMParser().parseFromString(html, "text/html");
+        const main = doc.querySelector("main");
+        root.innerHTML = main ? main.outerHTML : html;
+      }
+
+      function setMainStyle(filePath) {
+        const styleEl = document.getElementById("main-page-style");
+        if (!styleEl || !filePath) return;
+        styleEl.setAttribute("href", filePath);
+      }
+
+      document.addEventListener("click", async (event) => {
+        const link = event.target.closest("a[data-main-page]");
+        if (!link) return;
+
+        event.preventDefault();
+        const pagePath = link.getAttribute("data-main-page");
+        const stylePath = link.getAttribute("data-main-style");
+        if (!pagePath) return;
+
+        try {
+          setMainStyle(stylePath);
+          await loadMainFromPage("main-root", pagePath);
+        } catch (error) {
+          console.error(error);
+        }
+      });
+
+      window.addEventListener("DOMContentLoaded", async () => {
+        try {
+          await loadIntoRoot("header-root", "./preview/header.html");
+          setMainStyle("./css/foundation/colors.css");
+          await loadMainFromPage("main-root", "./preview/foundation-colors.html");
+          await loadIntoRoot("footer-root", "./preview/footer.html");
+        } catch (error) {
+          console.error(error);
+        }
+      });
+    </script>
+  </body>
+</html>

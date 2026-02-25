@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  font-family: var(--font-family-body);
+  background: var(--color-gray-100);
+  color: var(--semantic-color-text-default);
+}
+
+.header-page-content {
+  width: min(calc(var(--layout-content-width) + (var(--layout-side-space) * 2)), 100%);
+  padding-inline: var(--layout-side-space);
+  margin: 32px auto;
+  padding-block: 32px;
+  background: var(--color-gray-white);
+  border: 1px solid var(--semantic-color-line);
+  border-radius: 12px;
+}
+
+.header-page-content h1 {
+  margin: 0 0 8px;
+  font-family: var(--font-family-title);
+  font-size: var(--font-size-heading-m);
+}
+
+.header-page-content p {
+  margin: 0;
+  font-size: var(--font-size-body-l);
+}

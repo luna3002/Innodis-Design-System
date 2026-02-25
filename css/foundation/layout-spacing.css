@@ -1,0 +1,256 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Pretendard Variable", "Pretendard", system-ui, -apple-system, sans-serif;
+  background: #ffffff;
+  color: #d5d8e3;
+}
+
+.page {
+  width: min(calc(var(--layout-content-width) + (var(--layout-side-space) * 2)), 100%);
+  padding-inline: var(--layout-side-space);
+  margin: 40px auto 64px;
+}
+
+.section-kicker {
+  margin: 0 0 18px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #15274a;
+}
+
+.layout-showcase {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 28px;
+}
+
+.device {
+  background: #d8d8da;
+  padding: 18px;
+}
+
+.device .frame {
+  border: 1px solid #c2c8cf;
+  border-radius: 8px;
+  background: #ffffff;
+  min-height: 320px;
+  position: relative;
+}
+
+.device-title {
+  margin: 42px 0 0;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+  color: #1b2438;
+}
+
+.device-mobile .device-title {
+  font-size: 20px;
+  margin-top: 56px;
+}
+
+.block {
+  background: #d3d3d4;
+}
+
+.block-top {
+  height: 150px;
+  margin: 18px 6px 0;
+}
+
+.block-bottom {
+  height: 110px;
+  margin: 10px 6px 0;
+}
+
+.mobile-row {
+  margin: 20px 14px 0;
+  display: grid;
+  grid-template-columns:
+    minmax(0, var(--layout-side-space))
+    minmax(0, var(--layout-content-width))
+    minmax(0, var(--layout-side-space));
+  justify-content: center;
+  align-items: center;
+  column-gap: 0;
+}
+
+.mobile-side {
+  color: #f03d2f;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.block-mobile {
+  width: 100%;
+  height: 150px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.block-wide {
+  width: 100%;
+  height: 120px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.desktop-row {
+  margin: 28px 52px 0;
+  display: grid;
+  grid-template-columns:
+    minmax(0, var(--layout-side-space))
+    minmax(0, var(--layout-content-width))
+    minmax(0, var(--layout-side-space));
+  justify-content: center;
+  align-items: center;
+  column-gap: 0;
+}
+
+.desktop-side {
+  color: #f03d2f;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.block-label {
+  color: #f03d2f;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.guide {
+  position: relative;
+  color: #f03d2f;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.guide-mobile {
+  margin: 8px 14px 0;
+  height: 26px;
+}
+
+.guide-desktop {
+  margin: 12px 52px 0;
+  height: 30px;
+}
+
+.guide .label {
+  position: absolute;
+}
+
+.guide .left {
+  left: 0;
+}
+
+.guide .center {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.guide .right {
+  right: 0;
+}
+
+.spacing-section {
+  margin-top: 34px;
+}
+
+.section-description {
+  margin: 0 0 24px;
+  color: #7f8ca4;
+  font-size: 18px;
+}
+
+.spacing-groups {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(180px, 1fr));
+  gap: 28px;
+}
+
+.spacing-group header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #c8ccd5;
+  color: #6f7891;
+  font-size: 14px;
+}
+
+.spacing-group ul {
+  list-style: none;
+  margin: 14px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 14px;
+}
+
+.spacing-group li {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.chip {
+  position: relative;
+  display: inline-block;
+  padding: 2px 6px 2px 0;
+  border-radius: 2px;
+  background: transparent;
+  color: #1d0e35;
+  font-size: 13px;
+  line-height: 1.2;
+  white-space: nowrap;
+  text-align: left;
+}
+
+.chip::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: var(--chip-size, 12px);
+  height: calc(100% - 2px);
+  border-radius: 2px;
+  background: rgba(155, 102, 255, 0.2);
+  z-index: -1;
+}
+
+.chip-3 { --chip-size: var(--space-3); }
+.chip-4 { --chip-size: var(--space-4); }
+.chip-6 { --chip-size: var(--space-6); }
+.chip-8 { --chip-size: var(--space-8); }
+.chip-10 { --chip-size: var(--space-10); }
+.chip-12 { --chip-size: var(--space-12); }
+.chip-14 { --chip-size: var(--space-14); }
+.chip-16 { --chip-size: var(--space-16); }
+.chip-18 { --chip-size: var(--space-18); }
+.chip-20 { --chip-size: var(--space-20); }
+.chip-24 { --chip-size: var(--space-24); }
+.chip-28 { --chip-size: var(--space-28); }
+.chip-32 { --chip-size: var(--space-32); }
+.chip-40 { --chip-size: var(--space-40); }
+.chip-60 { --chip-size: var(--space-60); }
+.chip-80 { --chip-size: var(--space-80); }
+
+@media (max-width: 1200px) {
+  .layout-showcase {
+    grid-template-columns: 1fr;
+  }
+
+  .spacing-groups {
+    grid-template-columns: repeat(2, minmax(180px, 1fr));
+  }
+}

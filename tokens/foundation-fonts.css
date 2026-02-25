@@ -1,0 +1,185 @@
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Thin.woff2") format("woff2");
+  font-weight: 100;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-ExtraLight.woff2") format("woff2");
+  font-weight: 200;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Paperlogy";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-1Thin.woff2") format("woff2");
+  font-weight: 100;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Paperlogy";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-2ExtraLight.woff2") format("woff2");
+  font-weight: 200;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Paperlogy";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-3Light.woff2") format("woff2");
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Paperlogy";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-4Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Paperlogy";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-5Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Paperlogy";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-6SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Paperlogy";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-7Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Paperlogy";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Paperlogy";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-9Black.woff2") format("woff2");
+  font-weight: 900;
+  font-display: swap;
+}
+
+:root {
+  /* ===== Font Family ===== */
+  --font-family-title: "Paperlogy", "Pretendard", system-ui, -apple-system, sans-serif;
+  --font-family-body: "Pretendard", system-ui, -apple-system, sans-serif;
+
+  /* ===== Font Weight ===== */
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* ===== Typography Common ===== */
+  --font-letter-spacing-tight: -1px;
+  --font-line-height-100: 1;
+  --font-line-height-150: 1.5;
+
+  /* ===== Fixed Type Scale (PC / Mobile) ===== */
+  --font-size-display-xl: 60px;
+  --font-size-display-xl-mobile: 40px;
+  --font-size-display-m: 52px;
+  --font-size-display-m-mobile: 32px;
+
+  --font-size-heading-xl: 40px;
+  --font-size-heading-xl-mobile: 28px;
+  --font-size-heading-m: 36px;
+  --font-size-heading-m-mobile: 26px;
+
+  --font-size-title-xl: 32px;
+  --font-size-title-xl-mobile: 24px;
+  --font-size-title-l: 28px;
+  --font-size-title-l-mobile: 22px;
+  --font-size-title-m: 26px;
+  --font-size-title-m-mobile: 20px;
+  --font-size-title-s: 24px;
+  --font-size-title-s-mobile: 18px;
+  --font-size-title-xs: 22px;
+  --font-size-title-xs-mobile: 16px;
+
+  --font-size-body-xl: 20px;
+  --font-size-body-xl-mobile: 15px;
+  --font-size-body-l: 18px;
+  --font-size-body-l-mobile: 14px;
+  --font-size-body-m: 16px;
+  --font-size-body-m-mobile: 12px;
+  --font-size-body-s: 15px;
+  --font-size-body-s-mobile: 11px;
+  --font-size-body-xs: 14px;
+  --font-size-body-xs-mobile: 10px;
+
+  --font-size-button-xl: 20px;
+  --font-size-button-xl-mobile: 14px;
+  --font-size-button-l: 18px;
+  --font-size-button-l-mobile: 14px;
+  --font-size-button-m: 16px;
+  --font-size-button-m-mobile: 12px;
+  --font-size-button-s: 14px;
+  --font-size-button-s-mobile: 11px;
+}

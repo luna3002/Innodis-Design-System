@@ -1,0 +1,165 @@
+:root {
+  /* ===== Brand ===== */
+  --color-brand-100: #fef1f1;
+  --color-brand-200: #e72417;
+  --color-brand-300: #8d0900;
+
+  /* ===== Base - Red ===== */
+  --color-red-100: #fef1f1;
+  --color-red-500: #e72417;
+  --color-red-700: #8d0900;
+
+  /* ===== Base - Rose ===== */
+  --color-rose-100: #fff4f7;
+  --color-rose-500: #e31854;
+  --color-rose-700: #89123e;
+
+  /* ===== Base - Yellow ===== */
+  --color-yellow-100: #fff9f3;
+  --color-yellow-500: #ffde00;
+  --color-yellow-700: #b92b00;
+
+  /* ===== Base - Green ===== */
+  --color-green-100: #f5fff2;
+  --color-green-500: #18a400;
+  --color-green-700: #104e00;
+
+  /* ===== Base - Mint ===== */
+  --color-mint-100: #effaf8;
+  --color-mint-500: #00818f;
+  --color-mint-700: #004f58;
+
+  /* ===== Base - Blue ===== */
+  --color-blue-100: #f4f7ff;
+  --color-blue-500: #136ee3;
+  --color-blue-700: #06215e;
+
+  /* ===== Base - Indigo ===== */
+  --color-indigo-100: #eceff7;
+  --color-indigo-500: #3e4784;
+  --color-indigo-700: #161d41;
+
+  /* ===== Base - Purple ===== */
+  --color-purple-100: #f2edff;
+  --color-purple-500: #5925dc;
+  --color-purple-700: #240b66;
+
+  /* ===== Gray Scale ===== */
+  --color-gray-white: #ffffff;
+  --color-gray-100: #fafafa;
+  --color-gray-150: #f2f2f2;
+  --color-gray-200: #e6e6e6;
+  --color-gray-250: #dddddd;
+  --color-gray-300: #cccccc;
+  --color-gray-350: #bbbbbb;
+  --color-gray-400: #aaaaaa;
+  --color-gray-450: #999999;
+  --color-gray-500: #888888;
+  --color-gray-550: #777777;
+  --color-gray-600: #666666;
+  --color-gray-650: #555555;
+  --color-gray-700: #444444;
+  --color-gray-750: #333333;
+  --color-gray-800: #2a2a2a;
+  --color-gray-850: #222222;
+  --color-gray-900: #1a1a1a;
+  --color-gray-950: #111111;
+  --color-gray-black: #000000;
+
+  /* ===== Semantic Colors ===== */
+  --semantic-color-error: var(--color-red-500);
+  --semantic-color-information: var(--color-blue-500);
+  --semantic-color-line: var(--color-gray-250);
+  --semantic-color-subtext: var(--color-gray-600);
+  --semantic-color-emphasis-line: var(--color-gray-800);
+  --semantic-color-text-default: var(--color-gray-950);
+
+  /* ===== Foundation Layout (Fluid: 390px ~ 1920px) ===== */
+  --layout-side-space: clamp(16px, calc(-46.1961px + 15.9477vw), 260px);
+  --layout-content-width: clamp(358px, calc(92.3922px + 68.1046vw), 1400px);
+
+  /* ===== Foundation Spacing Scale ===== */
+  --space-3: 3px;
+  --space-4: clamp(3px, calc(2.7451px + 0.0654vw), 4px);
+  --space-6: clamp(3px, calc(2.2353px + 0.1961vw), 6px);
+  --space-8: clamp(4px, calc(2.9804px + 0.2614vw), 8px);
+  --space-10: clamp(8px, calc(7.4902px + 0.1307vw), 10px);
+  --space-12: clamp(10px, calc(9.4902px + 0.1307vw), 12px);
+  --space-14: clamp(12px, calc(11.4902px + 0.1307vw), 14px);
+  --space-16: clamp(14px, calc(13.4902px + 0.1307vw), 16px);
+  --space-18: clamp(16px, calc(15.4902px + 0.1307vw), 18px);
+  --space-20: clamp(18px, calc(17.4902px + 0.1307vw), 20px);
+  --space-24: clamp(20px, calc(18.9804px + 0.2614vw), 24px);
+  --space-28: clamp(24px, calc(22.9804px + 0.2614vw), 28px);
+  --space-32: clamp(28px, calc(26.9804px + 0.2614vw), 32px);
+  --space-40: clamp(32px, calc(29.9608px + 0.5229vw), 40px);
+  --space-60: clamp(40px, calc(34.902px + 1.3072vw), 60px);
+  --space-80: clamp(60px, calc(54.902px + 1.3072vw), 80px);
+
+  /* ===== Foundation Radius (PC ↔ Mobile) ===== */
+  /* from raw/라운드/boder_radius_xs: PC 4px, Mobile 2px */
+  --radius-xs: clamp(2px, calc(1.4902px + 0.1307vw), 4px);
+  /* from raw/라운드/boder_radius_m: PC 20px, Mobile 12px */
+  --radius-m: clamp(12px, calc(9.9608px + 0.5229vw), 20px);
+  /* from raw/라운드/border_radius_btn: PC 4px, Mobile 2px */
+  --radius-button: clamp(2px, calc(1.4902px + 0.1307vw), 4px);
+
+  /* ===== Foundation Icon Size (PC ↔ Mobile) ===== */
+  /* from raw/아이콘/24 to 18: PC 24px, Mobile 18px */
+  --icon-size-24: clamp(18px, calc(16.4706px + 0.3922vw), 24px);
+  /* from raw/아이콘/20 to 16: PC 20px, Mobile 16px */
+  --icon-size-20: clamp(16px, calc(14.9804px + 0.2614vw), 20px);
+  /* from raw/아이콘/18 to 14: PC 18px, Mobile 14px */
+  --icon-size-18: clamp(14px, calc(12.9804px + 0.2614vw), 18px);
+  /* from raw/아이콘/두께: PC 1.5px, Mobile 1px */
+  --icon-stroke-width: clamp(1px, calc(0.8725px + 0.0327vw), 1.5px);
+  /* from raw/아이콘/캐러셀도트: PC 8px, Mobile 6px */
+  --icon-carousel-dot-size: clamp(6px, calc(5.4902px + 0.1307vw), 8px);
+
+  /* ===== Foundation Button (PC ↔ Mobile) ===== */
+  /* Font size */
+  /* xl: PC 20px, Mobile 16px */
+  --button-font-size-xl: clamp(16px, calc(14.9804px + 0.2614vw), 20px);
+  /* l: PC 18px, Mobile 14px */
+  --button-font-size-l: clamp(14px, calc(12.9804px + 0.2614vw), 18px);
+  /* m: PC 16px, Mobile 12px */
+  --button-font-size-m: clamp(12px, calc(10.9804px + 0.2614vw), 16px);
+  /* s: PC 14px, Mobile 11px */
+  --button-font-size-s: clamp(11px, calc(10.2353px + 0.1961vw), 14px);
+
+  /* Horizontal padding (inline) */
+  /* xl: PC 20px, Mobile 16px */
+  --button-padding-inline-xl: clamp(16px, calc(14.9804px + 0.2614vw), 20px);
+  /* l: PC 18px, Mobile 14px */
+  --button-padding-inline-l: clamp(14px, calc(12.9804px + 0.2614vw), 18px);
+  /* m: PC 13px, Mobile 10px */
+  --button-padding-inline-m: clamp(10px, calc(9.2353px + 0.1961vw), 13px);
+  /* s: PC 12px, Mobile 8px */
+  --button-padding-inline-s: clamp(8px, calc(6.9804px + 0.2614vw), 12px);
+
+  /* Vertical padding (block) */
+  /* xl: PC 16px, Mobile 12px */
+  --button-padding-block-xl: clamp(12px, calc(10.9804px + 0.2614vw), 16px);
+  /* l: PC 12px, Mobile 12px (fixed) */
+  --button-padding-block-l: 12px;
+  /* m: PC 12px, Mobile 10px */
+  --button-padding-block-m: clamp(10px, calc(9.4902px + 0.1307vw), 12px);
+  /* s: PC 8px, Mobile 8px (fixed) */
+  --button-padding-block-s: 8px;
+
+  /* Button icon size */
+  /* xl: PC 18px, Mobile 14px */
+  --button-icon-size-xl: clamp(14px, calc(12.9804px + 0.2614vw), 18px);
+  /* l: PC 16px, Mobile 13px */
+  --button-icon-size-l: clamp(13px, calc(12.2353px + 0.1961vw), 16px);
+  /* m: PC 14px, Mobile 11px */
+  --button-icon-size-m: clamp(11px, calc(10.2353px + 0.1961vw), 14px);
+  /* s: PC 12px, Mobile 10px */
+  --button-icon-size-s: clamp(10px, calc(9.4902px + 0.1307vw), 12px);
+
+  /* Gap between button text and icon */
+  /* xl~l: PC 8px, Mobile 6px */
+  --button-icon-gap-xl-l: clamp(6px, calc(5.4902px + 0.1307vw), 8px);
+  /* m~s: PC 6px, Mobile 4px */
+  --button-icon-gap-m-s: clamp(4px, calc(3.4902px + 0.1307vw), 6px);
+}
